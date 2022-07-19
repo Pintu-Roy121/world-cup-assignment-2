@@ -1,3 +1,11 @@
+/* -----------
+    font added
+---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------------------
+    Common styles
+-------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +13,67 @@
 }
 
 body {
-    background-color: red;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------------
+    header-banner styles 
+-----------------------------*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-banner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.banner-details {
+    color: white;
+    padding: 50px;
+}
+
+.banner-title {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 16px 25px;
+    background: #DD0000;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #e04646;
+    transition: 0.8s;
+}
+
+.fa-chevron-right {
+    margin-left: 10px;
+}
+
+.banner-image {
+    margin-top: 33px;
+    margin-bottom: -7px;
+}
+
+.banner-image img {
+    width: 550px;
+    margin-right: 80px;
 }
