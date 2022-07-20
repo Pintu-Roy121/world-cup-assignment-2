@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #161616;
+    background-color: #0f0707;
     margin: 50px;
     border-radius: 30px;
 }
@@ -114,7 +114,7 @@ header {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    background: #161616;
+    background: #0f0707;
     border-radius: 10px;
     padding: 30px;
 }
@@ -259,7 +259,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
+    background-color: #0f0707;
 }
 
 .footer-title {
