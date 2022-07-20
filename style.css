@@ -264,7 +264,7 @@ header {
 .social-icon a:hover {
     color: #e04646;
     transition: 0.8s;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 
@@ -334,3 +334,5 @@ header {
         align-items: center;
     }
 }
+
+@media only screen and(max-width:767px) {}
