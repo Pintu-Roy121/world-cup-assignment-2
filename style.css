@@ -85,6 +85,7 @@ header {
     margin-right: 80px;
 }
 
+
 /* ------------main section styles---------- */
 .main-container {
     display: flex;
@@ -101,11 +102,11 @@ header {
 
 }
 
-.form {
-    grid-row: 1/-4;
+.side-bar {
+    grid-row: 1/4;
 }
 
-.side-bar {
+.form {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
@@ -114,15 +115,25 @@ header {
     padding: 30px;
 }
 
-.side-bar button {
+.form button {
     border-radius: 10px;
     font-size: 20px;
 }
 
-.side-bar a {
+.form a {
     text-decoration: none;
     color: #161616;
     ;
+}
+
+.form .form-btn {
+    text-decoration: none;
+    padding: 16px 25px;
+    background: #DD0000;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .match {
@@ -150,7 +161,7 @@ header {
 
 }
 
-.match-taitle {
+.match-title {
     color: #161616;
     font-size: 18px;
     font-weight: 600;
@@ -196,7 +207,7 @@ header {
     background-color: #161616;
 }
 
-.footer-taitle {
+.footer-title {
     font-size: 48px;
     color: white;
 }

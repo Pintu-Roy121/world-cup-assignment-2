@@ -85,7 +85,9 @@ header {
     margin-right: 80px;
 }
 
-/* ------------main section styles---------- */
+/* ----------------------
+    main section styles
+------------------------ */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -94,18 +96,18 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-columns: 312px repeat(3, 1fr);
     justify-content: center;
     gap: 20px;
     margin: 50px;
 
 }
 
-.form {
-    grid-row: 1/-4;
+.side-bar {
+    grid-row: 1/4;
 }
 
-.side-bar {
+.form {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
@@ -114,20 +116,45 @@ header {
     padding: 30px;
 }
 
-.side-bar button {
+.form .form-btn {
+    text-decoration: none;
+    padding: 16px 25px;
+    background: #F0F0F0;
     border-radius: 10px;
     font-size: 20px;
+    color: #161616;
+    text-align: center;
 }
 
-.side-bar a {
+.form button {
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.form a {
     text-decoration: none;
     color: #161616;
-    ;
+}
+
+.upcoming {
+    background-color: #DD0000;
+}
+
+.upcoming a {
+    color: white;
 }
 
 .match {
     border: 2px solid rgba(189, 189, 189, 0.199);
     border-radius: 12px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.match-image {
+    display: flex;
+    align-items: center;
 }
 
 .match-image img {
@@ -136,6 +163,7 @@ header {
 
 .match-details {
     margin: 20px;
+    line-height: 35px;
 }
 
 .match-btn {
@@ -150,10 +178,14 @@ header {
 
 }
 
-.match-taitle {
+.match-title {
     color: #161616;
     font-size: 18px;
     font-weight: 600;
+}
+
+.match-title span {
+    color: #4D4D4D;
 }
 
 .match-info {
@@ -196,7 +228,7 @@ header {
     background-color: #161616;
 }
 
-.footer-taitle {
+.footer-title {
     font-size: 48px;
     color: white;
 }
