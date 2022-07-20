@@ -281,7 +281,7 @@ header {
 --------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     .banner-title {
-        font-size: 40px;
+        font-size: 40gitpx;
     }
 
     .banner-details .banner-text {
