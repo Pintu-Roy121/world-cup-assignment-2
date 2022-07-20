@@ -219,6 +219,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400px;
     background-color: #161616;
 }
 
@@ -263,7 +264,7 @@ header {
 .social-icon a:hover {
     color: #e04646;
     transition: 0.8s;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 
