@@ -78,11 +78,11 @@ header {
 .banner-image {
     margin-top: 33px;
     margin-bottom: -7px;
+    padding-right: 40px;
 }
 
 .banner-image img {
     width: 550px;
-    margin-right: 80px;
 }
 
 
@@ -219,7 +219,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
     background-color: #161616;
 }
 
@@ -233,7 +232,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
 }
 
 .support a {
@@ -249,8 +248,7 @@ header {
 .social-icon {
     display: flex;
     gap: 35px;
-    height: 35px;
-    margin-top: 35px;
+    margin: 35px 0;
 
 }
 
@@ -272,7 +270,7 @@ header {
 /* -----------------------
     media queries styles
 -------------------------- */
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width:1024px) {
     .banner-title {
         font-size: 30px;
     }
@@ -328,6 +326,7 @@ header {
     }
 
     .support {
+        width: 52%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -335,4 +334,38 @@ header {
     }
 }
 
-@media only screen and(max-width:767px) {}
+@media only screen and (max-width:767px) {
+    .header-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .banner-image {
+        padding: 0px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .form {
+        background: none;
+    }
+
+    .support {
+        flex-direction: column;
+    }
+}
