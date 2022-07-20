@@ -47,7 +47,6 @@ header {
 
 .banner-title {
     font-size: 70px;
-    line-height: 80px;
     margin-bottom: 20px;
 }
 
@@ -78,11 +77,12 @@ header {
 .banner-image {
     margin-top: 33px;
     margin-bottom: -7px;
+    padding-right: 40px;
 }
 
 .banner-image img {
     width: 550px;
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 
 /* ----------------------
@@ -95,11 +95,12 @@ header {
 }
 
 .container {
+    width: 90%;
     display: grid;
     grid-template-columns: 312px repeat(3, 1fr);
-    justify-content: center;
+    /* justify-content: center; */
     gap: 20px;
-    margin: 50px;
+    /* margin: 50px; */
 
 }
 
@@ -116,7 +117,7 @@ header {
     padding: 30px;
 }
 
-.form .form-btn {
+/* .form .form-btn {
     text-decoration: none;
     padding: 16px 25px;
     background: #F0F0F0;
@@ -124,25 +125,53 @@ header {
     font-size: 20px;
     color: #161616;
     text-align: center;
-}
+} */
 
 .form button {
+    padding: 20px 20px;
     border-radius: 10px;
     font-size: 20px;
     border: none;
+    border: 1px solid gray
 }
+
+.form a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.form button:hover {
+    background-color: #e04646;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.form .upcoming {
+    background-color: #DD0000;
+    border: none;
+}
+
+
 
 .form a {
     text-decoration: none;
-    color: #161616;
-}
-
-.upcoming {
-    background-color: #DD0000;
+    color: black;
 }
 
 .upcoming a {
-    color: white;
+    color: #ffffff;
+}
+
+.form-btn {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-btn a {
+    color: black;
 }
 
 .match {
@@ -155,6 +184,10 @@ header {
 .match-image {
     display: flex;
     align-items: center;
+}
+
+.vs {
+    margin: 0 5px;
 }
 
 .match-image img {
@@ -224,18 +257,22 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
     background-color: #161616;
 }
 
 .footer-title {
+    margin-top: 30px;
     font-size: 48px;
     color: white;
 }
 
 .support {
     display: flex;
-    gap: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .support a {
@@ -246,4 +283,146 @@ header {
 .support a:hover {
     color: #e04646;
     transition: 0.5s;
+}
+
+.social-icon {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    display: none;
+
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: #B9B9B9;
+    font-size: 25px;
+    transition: margin-top 0.5s;
+    cursor: pointer;
+}
+
+.social-icon a:hover {
+    color: #e04646;
+    transition: 0.8s;
+    margin-top: -20px;
+}
+
+/* ------------------------------------------
+    media queries Styles For Tablet screen
+--------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .banner-details .banner-text {
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .banner-image img {
+        width: 350px;
+        margin-right: 5px;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .side-bar {
+        grid-column: 1/-1;
+    }
+
+    .form {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 30px;
+        background: none;
+        padding: 0;
+    }
+
+    .form button {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+
+    .tablet-btn {
+        display: block;
+    }
+
+    .support {
+        width: 52%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .social-icon {
+        display: block;
+    }
+}
+
+/* --------------------------------------------
+    media queries Styles For Mobile screen
+----------------------------------------------- */
+@media only screen and (max-width:767px) {
+    .header-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .fa-chevron-right {
+        margin-left: 0px;
+    }
+
+    .banner-image {
+        padding: 0px;
+    }
+
+    .banner-image img {
+        width: 80%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .form {
+        background: none;
+    }
+
+    .support {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .social-icon {
+        display: block;
+    }
 }

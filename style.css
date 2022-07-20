@@ -19,7 +19,7 @@ body {
 hr {
     border: 1px solid gray;
     width: 90%;
-    margin: 50px;
+    margin: 30px;
 }
 
 /* --------------------------
@@ -98,7 +98,7 @@ header {
 .container {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 312px repeat(3, 1fr);
     gap: 20px;
 
 }
@@ -223,6 +223,7 @@ header {
 }
 
 .footer-title {
+    margin-top: 30px;
     font-size: 48px;
     color: white;
 }
@@ -233,6 +234,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .support a {
@@ -247,14 +249,16 @@ header {
 
 .social-icon {
     display: flex;
-    gap: 35px;
-    margin: 35px 0;
+    gap: 30px;
+    margin: 30px 0;
+    display: none;
 
 }
 
 .social-icon a {
+    text-decoration: none;
     color: #B9B9B9;
-    font-size: 35px;
+    font-size: 25px;
     transition: margin-top 0.5s;
     cursor: pointer;
 }
@@ -267,9 +271,9 @@ header {
 
 
 
-/* -----------------------
-    media queries styles
--------------------------- */
+/* ------------------------------------------
+    media queries Styles For Tablet screen
+--------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     .banner-title {
         font-size: 30px;
@@ -331,9 +335,17 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .social-icon {
+        display: block;
     }
 }
 
+/* --------------------------------------------
+    media queries Styles For Mobile screen
+----------------------------------------------- */
 @media only screen and (max-width:767px) {
     .header-banner {
         flex-direction: column;
@@ -345,6 +357,14 @@ header {
     .banner-title {
         font-size: 22px;
         font-weight: 700;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .fa-chevron-right {
+        margin-left: 0px;
     }
 
     .banner-image {
@@ -367,5 +387,10 @@ header {
 
     .support {
         flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .social-icon {
+        display: block;
     }
 }
