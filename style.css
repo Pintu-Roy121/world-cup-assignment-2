@@ -343,7 +343,7 @@ header {
     }
 
     .banner-title {
-        font-size: 35px;
+        font-size: 22px;
         font-weight: 700;
     }
 
@@ -352,7 +352,7 @@ header {
     }
 
     .banner-image img {
-        width: 100%;
+        width: 80%;
     }
 
     .container {
