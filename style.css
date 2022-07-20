@@ -121,6 +121,17 @@ header {
     border: none;
 }
 
+.form a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.form button:hover {
+    background-color: #e04646;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
 .form a {
     text-decoration: none;
     color: #161616;
@@ -134,6 +145,11 @@ header {
     font-size: 20px;
     color: #ffffff;
     text-align: center;
+}
+
+.form-btn:hover {
+    background-color: #e04646;
+    transition: 0.8s;
 }
 
 .match {
@@ -225,4 +241,25 @@ header {
 .support a:hover {
     color: #e04646;
     transition: 0.5s;
+}
+
+.social-icon {
+    display: flex;
+    gap: 35px;
+    height: 35px;
+    margin-top: 35px;
+
+}
+
+.social-icon a {
+    color: #B9B9B9;
+    font-size: 35px;
+    transition: margin-top 0.5s;
+    cursor: pointer;
+}
+
+.social-icon a:hover {
+    color: #e04646;
+    transition: 0.8s;
+    margin-top: -20px;
 }
